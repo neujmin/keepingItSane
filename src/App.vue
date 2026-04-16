@@ -1,17 +1,21 @@
 <script setup lang="ts">
 import { Button } from '@/components/ui/button'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
 </script>
 
 <template>
-  <div class="p-10">
+  <div class="flex items-center justify-center min-h-screen p-10">
     <Card class="w-87.5">
       <CardHeader>
-        <CardTitle>Hello World</CardTitle>
+        <CardTitle>Keeping It Sane!</CardTitle>
       </CardHeader>
       <CardContent>
-        <p>This is a shadcn card built with Tailwind CSS.</p>
-        <Button class="mt-4">Click Me</Button>
+        <p>{{ t('welcome') }}</p>
+        <Button class="mt-4">{{ t('login') }}</Button>
       </CardContent>
     </Card>
   </div>
