@@ -1,8 +1,8 @@
 {
-  "$schema": "https://shadcn-vue.com/schema.json",
-  "style": "new-york",
-  "font": "inter",
-  "typescript": true,
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "radix-vega",
+  "rsc": false,
+  "tsx": true,
   "tailwind": {
     "config": "",
     "css": "src/style.css",
@@ -17,7 +17,9 @@
     "utils": "@/lib/utils",
     "ui": "@/components/ui",
     "lib": "@/lib",
-    "composables": "@/composables"
+    "hooks": "@/hooks"
   },
+  "menuColor": "inverted-translucent",
+  "menuAccent": "subtle",
   "registries": {}
 }
