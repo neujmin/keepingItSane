@@ -1,11 +1,20 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { Button } from '@/components/ui/button'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+</script>
 
 <template>
-  <h1 class="text-3xl font-bold underline">You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class="p-10">
+    <Card class="w-87.5">
+      <CardHeader>
+        <CardTitle>Hello World</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <p>This is a shadcn card built with Tailwind CSS.</p>
+        <Button class="mt-4">Click Me</Button>
+      </CardContent>
+    </Card>
+  </div>
 </template>
 
 <style scoped></style>
