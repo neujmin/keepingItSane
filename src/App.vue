@@ -7,9 +7,7 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <div
-    class="flex items-center justify-center min-h-screen p-10 bg-fuchsia-800"
-  >
+  <div class="flex items-center justify-center min-h-screen p-10 bg-sky-50">
     <Card class="w-87.5">
       <CardHeader>
         <CardTitle>Keeping It Sane!</CardTitle>
